@@ -12,6 +12,6 @@ function App() {
       <Modal />
     </div>
   );
-}
+};
 
 export default App;
