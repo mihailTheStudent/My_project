@@ -5,7 +5,7 @@ function Row(props) {
     <tr>
       <td>
         <div>
-          <button onClick={()=> {props.deleteRow(props.code)}}></button>
+          <button onClick={( )=> {props.deleteRow(props.code)}}></button>
           {props.fullName}
         </div>
       </td>

@@ -1,5 +1,6 @@
 import React from "react";
 import Row from "./Row/Row";
+import "./Table.css";
 
 const  users = [
     {
@@ -28,7 +29,6 @@ function UserTable (props) {
     const deleteRow =(code)=> {
         let newUsers = usersArray.filter(user => user.code != code)
         setUsers(newUsers)
-      
     }
 
     function addUser (user) {
@@ -73,9 +73,6 @@ function UserTable (props) {
         </table>
     );
 };
-
-
-
 
 
 export default UserTable;
