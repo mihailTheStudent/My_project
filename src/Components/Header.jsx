@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
 import Modal from "../Modal/Modal";
-import Search from "./Search/Search";
+import UserSearch from "./UserSearch/UserSearch";
 
-const Header = () => {
+
+const Header = ({setSearchValue}) => {
   const [open, setOpen] = React.useState(false);
   return (
     <header>
@@ -57,7 +58,7 @@ const Header = () => {
           </label>
         </form>
       </Modal>
-      <Search />
+      <UserSearch setSearchValue={setSearchValue}/>
     </header>
   );
 };

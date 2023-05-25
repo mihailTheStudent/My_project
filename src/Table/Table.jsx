@@ -29,6 +29,7 @@ function UserTable(props) {
     let newUsers = usersArray.filter((user) => user.code != code);
     setUsers(newUsers);
   };
+  console.log(props.searchValue)
 
   function addUser(user) {
     let newUsers = usersArray;
@@ -38,6 +39,9 @@ function UserTable(props) {
 
   let someVar = [];
   for (let i = 0; i < usersArray.length; i++) {
+    if(users[i].fullName.toLowerCase().includes(props.searchValue.toLowerCase())) {
+
+    
     someVar.push(
       <Row
         fullName={users[i].fullName}
@@ -53,7 +57,8 @@ function UserTable(props) {
         {" "}
       </Row>
     );
-  }
+   };
+  };
   return (
     <table className="table contanier">
       <thead>

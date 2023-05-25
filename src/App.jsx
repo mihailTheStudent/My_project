@@ -5,11 +5,12 @@ import UserTable from "./Table/Table";
 import Modal from "./Modal/Modal";
 
 function App() {
+  const [searchValue, setSearchValue] = useState('');
+  
   return (
     <div className="app">
-      <Header />
-      <UserTable />
-      <Modal />
+      <Header setSearchValue={setSearchValue}/>
+      <UserTable searchValue={searchValue}/>
     </div>
   );
 };
