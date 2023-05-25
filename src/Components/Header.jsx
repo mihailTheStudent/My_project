@@ -14,9 +14,11 @@ const Header = () => {
       <Modal open={open} setOpen={setOpen}>
         <form>
           <div>
-            <p>Сотрудники(Создание)</p>
-            <button>Записать и закрыть</button>
-            <button>Записать</button>
+            <h2>
+              Сотрудники(Создание)
+            </h2>
+            <button className="bm-1">Записать и закрыть</button>
+            <button className="bm-2">Записать</button>
           </div>
 
           <label>

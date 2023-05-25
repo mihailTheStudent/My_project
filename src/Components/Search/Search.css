@@ -1,0 +1,20 @@
+.searchStyle {
+    margin-left: auto;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: white 2px solid;
+    border-right: groove;
+}
+
+.outLine-info {
+    font-family: inherit;
+    padding: 12px;
+    font-weight: bolder;
+    border-top-right-radius: 10px;  
+    border-bottom-right-radius: 10px;
+    border: unset;
+    background-color: rgb(212, 210, 207);
+}

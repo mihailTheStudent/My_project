@@ -3,11 +3,15 @@ import "./Row.css";
 
 function Row(props) {
   return (
-    <div className="row">
-    <tr>
+    <tr className="row">
       <td>
         <div>
-          <button onClick={( )=> {props.deleteRow(props.code)}}></button>
+          <button
+            className="buttonRow"
+            onClick={() => {
+              props.deleteRow(props.code);
+            }}
+          ></button>
           {props.fullName}
         </div>
       </td>
@@ -18,7 +22,6 @@ function Row(props) {
       <td>{props.birthday}</td>
       <td>{props.sex}</td>
     </tr>
-    </div>
   );
 };
 

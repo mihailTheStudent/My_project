@@ -55,22 +55,20 @@ function UserTable(props) {
     );
   }
   return (
-    <div className="table">
-      <table>
-        <thead>
-          <tr>
-            <th>Наименование</th>
-            <th>Код</th>
-            <th>Фамилия</th>
-            <th>Имя</th>
-            <th>Отчество</th>
-            <th>Дата рождения</th>
-            <th>Пол</th>
-          </tr>
-        </thead>
-        <tbody>{someVar}</tbody>
-      </table>
-    </div>
+    <table className="table contanier">
+      <thead>
+        <tr>
+          <th>Наименование</th>
+          <th>Код</th>
+          <th>Фамилия</th>
+          <th>Имя</th>
+          <th>Отчество</th>
+          <th>Дата рождения</th>
+          <th>Пол</th>
+        </tr>
+      </thead>
+      <tbody>{someVar}</tbody>
+    </table>
   );
 }
 

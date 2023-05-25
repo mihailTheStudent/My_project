@@ -40,12 +40,18 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-
+    font-size: medium;
+    font-weight: bolder;
 }
 
 .modal__content form label input {
     margin-left: 8px;
     width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    border: unset;
+    font-weight: bold;
+    
 }
 
 .modal__content.active {
@@ -55,11 +61,7 @@
 
 body {
     background-color: rgb(56, 55, 55);
-    color: white;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    
-    
     
 }
 

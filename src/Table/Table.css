@@ -1,3 +1,35 @@
 .table {
-    background-color: rgb(117, 102, 102);
+    background-color: rgba(107, 98, 98, 0.301);
+    color: white; 
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
 }
+
+.contanier {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 13px;
+}
+
+.table th {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10px;
+}
+
+.table tr {
+    transition: all 0.3s;
+}
+
+.table tr:hover {
+    background-color: #949292;
+}
+
+
+
