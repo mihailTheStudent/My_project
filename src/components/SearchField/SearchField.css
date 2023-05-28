@@ -1,4 +1,4 @@
-.searchStyle {
+.search-field input {
     margin-left: auto;
     padding: 10px;
     font-family: 'Montserrat';
@@ -9,7 +9,7 @@
     border-right: groove;
 }
 
-.outLine-info {
+.search-field button {
     font-family: inherit;
     padding: 12px;
     font-weight: bolder;
