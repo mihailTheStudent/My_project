@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 
-.modal {
+.popup {
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.4);
@@ -16,12 +16,12 @@
     transition: 0.5s;
 }
 
-.modal.active {
+.popup.active {
     opacity: 1;
     pointer-events: all;
 }
 
-.modal__content {
+.popup__content {
     padding: 40px;
     border-radius: 18px;
     background-color: rgb(83, 81, 81);
@@ -31,12 +31,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.modal__content form {
+.popup__content form {
     display:flex;
     flex-direction:column;
 }
 
-.modal__content form label {
+.popup__content form label {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -44,7 +44,7 @@
     font-weight: bolder;
 }
 
-.modal__content form label input {
+.popup__content form label input {
     margin-left: 8px;
     width: 250px;
     padding: 5px;
@@ -54,7 +54,7 @@
     
 }
 
-.modal__content.active {
+.popup__content.active {
     transform: scale(1);
 }
 

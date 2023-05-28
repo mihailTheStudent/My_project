@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import "./App.css";
-import Header from "./Components/Header";
-import UserTable from "./Table/Table";
-import Modal from "./Modal/Modal";
+import Header from "./components/Header/Header";
+import UserServiceState from "./components/UsersContext/UsersContext";
+import UserTable from "./components/Table/Table";
 
-function App() {
-  const [searchValue, setSearchValue] = useState('');
-  
-  return (
-    <div className="app">
-      <Header setSearchValue={setSearchValue}/>
-      <UserTable searchValue={searchValue}/>
-    </div>
-  );
-};
+export default function App() {
+	const [searchValue, setSearchValue] = useState("");
 
-export default App;
+	return (
+		<div className="app">
+			<UserServiceState>
+				<Header setSearchValue={setSearchValue} />
+				<UserTable searchValue={searchValue} />
+			</UserServiceState>
+		</div>
+	);
+}
